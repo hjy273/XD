@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/id_ac_register_iv_img"
+            android:layout_width="@dimen/my_img_width"
+            android:layout_height="@dimen/my_img_width"
+            android:layout_centerInParent="true"
+            android:src="@drawable/register_photo" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/id_ac_register_et_phone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/normal_divider"
+            android:background="@null"
+            android:drawableBottom="@drawable/line_heavy_gray_200"
+            android:hint="@string/onlycellphone"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/dimen_40"
+            android:singleLine="true"
+            android:textColor="@color/text_color_thin_black"
+            android:textColorHint="@color/text_color_thin_gray"
+            android:textSize="@dimen/small_textsize" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/id_ac_register_et_vertify"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableBottom="@drawable/line_heavy_gray_140"
+                android:gravity="left"
+                android:hint="@string/vertify_number"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/dimen_40"
+                android:textColor="@color/text_color_thin_black"
+                android:textColorHint="@color/text_color_thin_gray"
+                android:textSize="@dimen/small_textsize" />
+
+
+            <Button
+                android:id="@+id/id_ac_register_btn_get_vertify"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:background="@drawable/round_rect_30_selector"
+                android:text="@string/get"
+                android:textColor="@color/text_color_thin_black"
+                android:textSize="@dimen/small_textsize" />
+
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/id_ac_register_et_nickname"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@null"
+            android:drawableBottom="@drawable/line_heavy_gray_200"
+            android:gravity="left"
+            android:hint="@string/nick_name"
+            android:paddingLeft="@dimen/dimen_40"
+            android:textColor="@color/text_color_thin_black"
+            android:textColorHint="@color/text_color_thin_gray"
+            android:textSize="@dimen/small_textsize" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20">
+
+            <EditText
+                android:id="@+id/id_ac_register_et_pass"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:drawableBottom="@drawable/line_heavy_gray_200"
+                android:gravity="left"
+                android:hint="@string/user_password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/dimen_40"
+                android:textColor="@color/text_color_thin_black"
+                android:textColorHint="@color/text_color_thin_gray"
+                android:textSize="@dimen/small_textsize" />
+
+            <ImageView
+                android:id="@+id/id_ac_register_iv_pwd_display"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/eye_close" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/id_ac_register_et_inviteCode"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@null"
+            android:drawableBottom="@drawable/line_heavy_gray_200"
+            android:gravity="left"
+            android:singleLine="true"
+            android:hint="@string/invite_code"
+            android:paddingLeft="@dimen/dimen_40"
+            android:textColor="@color/text_color_thin_black"
+            android:textColorHint="@color/text_color_thin_gray"
+            android:textSize="@dimen/small_textsize" />
+
+        <Button
+            android:id="@+id/id_ac_register_btn_confirm"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/big_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:background="@drawable/login_btn_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/normal_textsize" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_left_double">
+
+        <TextView
+            android:id="@+id/id_ac_statu_identificate_tv_school"
+            android:layout_width="@dimen/edittext_width"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/school"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/normal_textsize" />
+
+        <View
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line_heavy_gray_200" />
+
+        <EditText
+            android:id="@+id/id_ac_statu_identificate_et_name"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:background="@null"
+            android:singleLine="true"
+            android:drawableBottom="@drawable/line_heavy_gray_200"
+            android:gravity="center"
+            android:hint="@string/real_name"
+            android:textColor="@color/text_color_thin_gray"
+            android:textColorHint="@color/text_color_thin_gray"
+            android:textSize="@dimen/normal_textsize" />
+
+        <LinearLayout
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/id_ac_statu_identificate_et_school_number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:hint="@string/school_number"
+                android:textColor="@color/text_color_thin_gray"
+                android:textColorHint="@color/text_color_thin_gray"
+                android:textSize="@dimen/normal_textsize" />
+            <TextView
+                android:id="@+id/id_ac_statu_identificate_tv_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/student"
+                android:background="@null"
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/small_textsize"/>
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line_heavy_gray_200" />
+
+
+        <EditText
+            android:id="@+id/id_ac_statu_identificate_et_school_pass"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:background="@null"
+            android:singleLine="true"
+            android:drawableBottom="@drawable/line_heavy_gray_200"
+            android:gravity="center_horizontal"
+            android:hint="@string/school_pass"
+            android:textColor="@color/text_color_thin_gray"
+            android:textColorHint="@color/text_color_thin_gray"
+            android:textSize="@dimen/normal_textsize" />
+
+
+        <Button
+            android:id="@+id/id_ac_forget_pass_btn_confirm"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/big_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:background="@drawable/login_btn_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/normal_textsize" />
+
+    </LinearLayout>
+
+</LinearLayout>

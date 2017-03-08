@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 聊天的face item -->
+<com.tyb.xd.view.GifTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/face_tv"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:background="@null"
+    android:padding="1dip" />

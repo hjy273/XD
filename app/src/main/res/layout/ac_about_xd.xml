@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/my_img_width"
+            android:layout_height="@dimen/my_img_width"
+            android:layout_centerInParent="true"
+            android:src="@drawable/login_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/id_ac_about_xd_rl_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_top_height">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/line_thin_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/line_thin_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:text="@string/xd_phone"
+                android:textColor="@color/text_color_thin_black"
+                android:textSize="@dimen/normal_textsize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_left"
+                android:text="@string/xd_phone_number"
+                android:textColor="@color/text_color_theme_green"
+                android:textSize="@dimen/normal_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_ac_about_xd_rl_service"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_top_height">
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/line_thin_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:text="@string/service_treaty"
+                android:textColor="@color/text_color_thin_black"
+                android:textSize="@dimen/normal_textsize" />
+
+            <ImageView
+                android:layout_width="@dimen/option_img_goto_width"
+                android:layout_height="@dimen/option_img_goto_heigth"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_left"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6" />
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_ac_evaluate_tv_smilepoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/default_credit"
+                android:textColor="@color/text_color_thin_red"
+                android:textSize="@dimen/big_textsize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_divider"
+                android:text="@string/you_have_pay"
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/normal_textsize" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_top_height"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/give_grade"
+                android:textSize="@dimen/normal_textsize" />
+
+            <RatingBar
+                android:id="@+id/id_ac_evaluate_ratingbar"
+                style="@style/love_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:stepSize="0.5" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/id_ac_evaluate_et_evaluate"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/padding_left"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:layout_weight="1"
+            android:background="@drawable/round_rect_blackstrock"
+            android:gravity="top"
+            android:hint="@string/write_evaluate"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/normal_divider"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/normal_textsize" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/id_ac_evaluate_btn_confirm"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_btn_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/normal_textsize" />
+    </RelativeLayout>
+
+</LinearLayout>

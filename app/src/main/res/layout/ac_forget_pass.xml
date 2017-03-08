@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/id_ac_forget_pass_et_phone"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:background="@null"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/dimen_60"
+            android:drawableBottom="@drawable/line_heavy_gray_200"
+            android:gravity="left"
+            android:hint="@string/onlycellphone"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/normal_textsize" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/id_ac_forget_pass_et_vertify"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableBottom="@drawable/line_heavy_gray_140"
+                android:gravity="left"
+                android:hint="@string/vertify_number"
+                android:paddingLeft="@dimen/dimen_60"
+                android:singleLine="true"
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/normal_textsize" />
+
+
+            <Button
+                android:id="@+id/id_ac_forget_pass_btn_get_vertify"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/alphalogin"
+                android:gravity="center"
+                android:text="@string/get"
+                android:textColor="@color/text_color_heavy_gray"
+                android:textSize="@dimen/normal_textsize" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/id_ac_forget_pass_et_pass"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:drawableBottom="@drawable/line_heavy_gray_200"
+            android:gravity="left"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/dimen_60"
+            android:hint="@string/reset_pass"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/normal_textsize" />
+
+        <EditText
+            android:id="@+id/id_ac_forget_pass_et_confirmpass"
+            android:layout_width="@dimen/edittext_width"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:background="@null"
+            android:paddingLeft="@dimen/dimen_60"
+            android:singleLine="true"
+            android:drawableBottom="@drawable/line_heavy_gray_200"
+            android:gravity="left"
+            android:hint="@string/confirmpass"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/normal_textsize" />
+
+
+        <Button
+            android:id="@+id/id_ac_forget_pass_btn_confirm"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/big_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:background="@drawable/login_btn_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/normal_textsize" />
+
+    </LinearLayout>
+
+</LinearLayout>

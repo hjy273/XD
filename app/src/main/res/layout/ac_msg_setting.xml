@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_divider"
+        android:layout_marginTop="@dimen/small_divider"
+        android:text="@string/receive_new_msg_notify"
+        android:textColor="@color/text_color_thin_gray"
+        android:textSize="@dimen/small_textsize" />
+
+
+    <RelativeLayout
+        android:id="@+id/id_msg_setting_rl_aboutxd"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/small_divider">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_thin_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_left_double"
+            android:text="@string/sound"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="@dimen/normal_textsize" />
+
+        <com.tyb.xd.view.SwitchView
+            android:id="@+id/id_ac_msg_setting_sv_sound"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_left" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/id_setting_rl_aboutxd"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_thin_gray" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_thin_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_left_double"
+            android:text="@string/shake"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="@dimen/normal_textsize" />
+
+        <com.tyb.xd.view.SwitchView
+            android:id="@+id/id_ac_msg_setting_sv_shake"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_left" />
+    </RelativeLayout>
+
+
+</LinearLayout>

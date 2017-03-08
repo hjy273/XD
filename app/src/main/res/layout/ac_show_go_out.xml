@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:timepicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/background_color_white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/padding_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/contact_stop_time"
+                android:textColor="@color/text_color_thin_red"
+                android:textSize="15sp" />
+
+
+            <com.tyb.xd.view.TimePicker
+                android:id="@+id/id_ac_show_go_out_tp_time"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                timepicker:layout_id="@layout/time_picker_big"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background_color_gary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_show_go_our_et_start_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_white_35"
+                    android:hint="@string/start_place"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_heavy_gray"
+                    android:textColorHint="@color/text_color_thin_gray"
+                    android:textSize="@dimen/small_textsize" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/line_white" />
+
+                <TextView
+                    android:id="@+id/id_show_go_our_et_arrive_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_white_35"
+                    android:hint="@string/end_place"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_heavy_gray"
+                    android:textColorHint="@color/text_color_thin_gray"
+                    android:textSize="@dimen/small_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/smile_point."
+                    android:textColor="@color/text_color_thin_gray"
+                    android:textSize="@dimen/small_textsize" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/id_show_go_our_et_xd_grade"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/circle_white_35"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/phone."
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <EditText
+                    android:id="@+id/id_show_go_our_et_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:background="@drawable/circle_white_35"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/text_color_heavy_gray"
+                    android:textSize="@dimen/small_textsize" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/id_show_go_our_et_text_des"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_white_35"
+                android:gravity="left|top"
+                android:hint="@string/show_go_out_text_des"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/text_color_heavy_gray"
+                android:textColorHint="@color/text_color_thin_gray"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/share_at_same_time"
+                android:textColor="@color/silver"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_divider"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left_double">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <CheckBox
+                        android:id="@+id/id_show_go_our_cb_qzone_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/sharecheckbox_selector"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:text="@string/qzone"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <CheckBox
+                        android:id="@+id/id_show_go_our_cb_frinds_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:button="@drawable/sharecheckbox_selector"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:text="@string/wechat"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <CheckBox
+                        android:id="@+id/id_show_go_our_cb_weibo_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:button="@drawable/sharecheckbox_selector"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:text="@string/weibo"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_show_go_our_btn_release"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/big_btn_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_btn_selector"
+                android:textColor="@color/text_color_white"
+                android:text="@string/xd_public" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tyb.xd.fragment.FgHall">
+
+    <include layout="@layout/ac_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/background_color_gary"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/id_fg_hall_tv_smilepoint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/background_color_gary"
+            android:text="@string/smile_point_sort"
+            android:textColor="@color/text_color_heavy_gray"
+            android:textSize="@dimen/hall_option_type_tv_size" />
+        <TextView
+            android:id="@+id/id_fg_hall_tv_nearby"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/background_color_gary"
+            android:text="@string/nearby"
+            android:textColor="@color/text_color_heavy_gray"
+            android:textSize="@dimen/hall_option_type_tv_size" />
+        <TextView
+            android:id="@+id/id_fg_hall_tv_placematch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/background_color_gary"
+            android:text="@string/place_match"
+            android:textColor="@color/text_color_heavy_gray"
+            android:textSize="@dimen/hall_option_type_tv_size" />
+    </LinearLayout>
+
+    <com.tyb.xd.view.refreshListView
+        android:id="@+id/id_fg_hall_lv_reward"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="1dp"
+        android:layout_weight="1"
+        android:divider="@drawable/line_thin_gray"
+        android:transcriptMode="normal" />
+
+</LinearLayout>

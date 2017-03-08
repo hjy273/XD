@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/id_recode_iv_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:padding="2dp"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:background="@drawable/head" />
+
+    <LinearLayout
+        android:id="@+id/id_recode_lv_right"
+        android:layout_width="@dimen/my_img_width"
+        android:layout_height="@dimen/my_img_width"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_left"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_recode_tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/default_time"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/hall_option_type_tv_size" />
+
+        <TextView
+            android:id="@+id/id_recode_tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_divider"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_left"
+        android:layout_toLeftOf="@id/id_recode_lv_right"
+        android:layout_toRightOf="@id/id_recode_iv_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_recode_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_user_name"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_divider"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="("
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/hall_option_type_tv_size" />
+
+            <TextView
+                android:id="@+id/id_recode_tv_start_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_user_name"
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/hall_option_type_tv_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="——"
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/hall_option_type_tv_size" />
+
+            <TextView
+                android:id="@+id/id_recode_tv_arrive_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_user_name"
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/hall_option_type_tv_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")"
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/hall_option_type_tv_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

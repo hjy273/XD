@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/popwindow_width"
+    android:layout_height="@dimen/popwindow_height"
+    android:background="@drawable/pop_bg">
+
+    <LinearLayout
+        android:id="@+id/id_pop_confirm_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_pop_confirm_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/cancel"
+            android:textColor="@color/text_color_heavy_gray"
+            android:textSize="@dimen/normal_textsize" />
+
+        <Button
+            android:id="@+id/id_pop_confirm_btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/confirm"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/normal_textsize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_pop_confirm_bottom"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/you_sure"
+                android:textColor="@color/text_color_thin_gray"
+                android:textSize="@dimen/small_textsize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/min_divider"
+                android:text="@string/have_complete.."
+                android:textColor="@color/text_color_heavy_gray"
+                android:textSize="@dimen/normal_textsize" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

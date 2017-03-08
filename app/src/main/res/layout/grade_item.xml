@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background_color_white"
+    android:layout_height="@dimen/msg_item_height">
+
+    <ImageView
+        android:id="@+id/id_grade_iv_img"
+        android:layout_width="@dimen/my_img_width"
+        android:layout_height="@dimen/my_img_width"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/id_grade_right"
+        android:layout_width="@dimen/my_img_width"
+        android:layout_height="@dimen/my_img_width"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_left"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_grade_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/default_time"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/hall_option_type_tv_size" />
+
+        <TextView
+            android:id="@+id/id_grade_tv_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/normal_divider"
+            android:textSize="@dimen/normal_textsize"
+            android:textColor="@color/text_color_theme_green"
+            android:text="@string/default_credit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_left"
+        android:layout_toLeftOf="@id/id_grade_right"
+        android:layout_toRightOf="@id/id_grade_iv_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_grade_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_user_name"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="@dimen/ac_top_tv_size" />
+
+        <TextView
+            android:id="@+id/id_grade_tv_last_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_divider"
+            android:text="@string/default_user_name"
+            android:textColor="@color/text_color_thin_gray"
+            android:textSize="@dimen/ac_top_tv_size" />
+    </LinearLayout>
+
+</RelativeLayout>

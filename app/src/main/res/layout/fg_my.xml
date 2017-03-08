@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_gary"
+    android:orientation="vertical"
+    tools:context="com.tyb.xd.fragment.FgHall">
+    <include layout="@layout/ac_top" />
+    <RelativeLayout
+        android:id="@+id/id_fg_my_me_rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/background_color_thin_green">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_ac_my_ll_head"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/id_fg_my_me_iv_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/head" />
+
+                <ImageView
+                    android:id="@+id/id_fg_my_me_iv_setimg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/photo"
+                    android:layout_gravity="bottom|right" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/id_ac_my_me_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_divider"
+                android:text="@string/default_user_name"
+                android:textColor="@color/text_color_thin_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/id_ac_my_tv_realName"
+            android:background="@drawable/circle_15"
+            android:text="@string/no_real_name_identificate"
+            android:layout_alignBottom="@+id/id_ac_my_ll_head"
+            android:layout_toRightOf="@+id/id_ac_my_ll_head"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_my_rl_everyday_sign"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_item_height"
+        android:background="@color/background_color_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_left_double"
+            android:text="@string/everyday_sign"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="@dimen/option_img_goto_width"
+            android:layout_height="@dimen/option_img_goto_heigth"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_left"
+            android:background="@android:color/transparent"
+            android:src="@drawable/go_to" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_my_rl_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_item_height"
+        android:background="@color/background_color_white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_thin_gray" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_thin_gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_left_double"
+            android:text="@string/wallet"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/id_my_item3"
+            android:layout_width="@dimen/option_img_goto_width"
+            android:layout_height="@dimen/option_img_goto_heigth"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_left"
+            android:background="@android:color/transparent"
+            android:src="@drawable/go_to" />
+        <TextView
+            android:id="@+id/id_my_tv_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_left"
+            android:layout_toLeftOf="@id/id_my_item3"
+            android:text="@string/default_wallet"
+            android:textColor="@color/text_color_no"
+            android:textSize="@dimen/normal_textsize" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_ac_my_rl_carryrecode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_item_height"
+        android:background="@color/background_color_white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_left_double"
+            android:text="@string/carry_recode"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_thin_gray" />
+
+        <ImageView
+            android:layout_width="@dimen/option_img_goto_width"
+            android:layout_height="@dimen/option_img_goto_heigth"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_left"
+            android:background="@android:color/transparent"
+            android:src="@drawable/go_to" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_fg_my_rl_xiaodi_attestation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_item_height"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@color/background_color_white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_thin_gray" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_thin_gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_left_double"
+            android:text="@string/xiaodi_attestation"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/id_fg_my_iv_item_go"
+            android:layout_width="@dimen/option_img_goto_width"
+            android:layout_height="@dimen/option_img_goto_heigth"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_left"
+            android:background="@android:color/transparent"
+            android:src="@drawable/go_to" />
+
+        <TextView
+            android:id="@+id/id_fg_my_tv_is_xiaodi_attestation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xiaodi_attestation_not"
+            android:layout_toLeftOf="@id/id_fg_my_iv_item_go"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_ac_my_rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_item_height"
+        android:background="@color/background_color_white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_thin_gray" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_thin_gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_left_double"
+            android:text="@string/setting"
+            android:textColor="@color/text_color_thin_black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="@dimen/option_img_goto_width"
+            android:layout_height="@dimen/option_img_goto_heigth"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_left"
+            android:background="@android:color/transparent"
+            android:src="@drawable/go_to" />
+    </RelativeLayout>
+
+</LinearLayout>

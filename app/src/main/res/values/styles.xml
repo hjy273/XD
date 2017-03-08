@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--全屏的样式，没有title，没有actionbar-->
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <!-- 自定义的ratingbat的样式，进度为心形-->
+    <style name="love_ratingbar" parent="Base.Widget.AppCompat.RatingBar">
+
+        <item name="android:progressDrawable">@drawable/love_ratingbar</item>
+        <item name="android:maxHeight">32dp</item>
+        <item name="android:minHeight">32dp</item>
+    </style>
+
+    <!--下面是背景透明的界面，在activity中设置主题来实现activity的背景透明 -->
+    <style name="nobkdtheme">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>-->
+    </style>
+
+    <!--WheelView控件的样式-->
+    <style name="wheelViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="itemNumber">3</item>
+        <item name="lineColor">@android:color/transparent</item>
+        <item name="bottomLineColor">#f5f5dc</item>
+        <item name="lineHeight">3dp</item>
+        <item name="firstLineAndSecondLineSpace">3dp</item>
+        <item name="maskHight">27dp</item>
+        <item name="noEmpty">true</item>
+        <item name="normalTextColor">#99bfbfbf</item>
+        <item name="normalTextSize">14sp</item>
+        <item name="selectedTextColor">#4d4d4d</item>
+        <item name="selectedTextSize">16sp</item>
+        <item name="unitHight">25dp</item>
+    </style>
+
+    <!--WheelView控件的样式-->
+    <style name="wheelViewStylebig">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="itemNumber">3</item>
+        <item name="lineColor">@android:color/transparent</item>
+        <item name="bottomLineColor">#f5f5dc</item>
+        <item name="lineHeight">3dp</item>
+        <item name="firstLineAndSecondLineSpace">7dp</item>
+        <item name="maskHight">35dp</item>
+        <item name="noEmpty">true</item>
+        <item name="normalTextColor">#99bfbfbf</item>
+        <item name="normalTextSize">14sp</item>
+        <item name="selectedTextColor">#4d4d4d</item>
+        <item name="selectedTextSize">17sp</item>
+        <item name="unitHight">30dp</item>
+    </style>
+
+</resources>

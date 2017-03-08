@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lc01">需要登录</string>
+    <string name="lc02">需要认证</string>
+    <string name="lc03">缺少参数</string>
+    <string name="er01">帐号名或密码错误</string>
+    <string name="er02">token错误或者过期</string>
+    <string name="er03">没有更多数据咯</string>
+    <string name="er04">校方认证失败</string>
+    <string name="er05">不是管理员</string>
+    <string name="er06">用户名重复</string>
+    <string name="er07">手机号重复</string>
+    <string name="er08">不安全的用户名</string>
+    <string name="er09">参数不符合要求</string>
+    <string name="er10">已经认证过了</string>
+    <string name="er11">时间格式错误</string>
+    <string name="er12">不能重复领取任务</string>
+    <string name="er13">操作不允许</string>
+    <string name="er14">笑点不足	</string>
+    <string name="ne01">用户不存在</string>
+    <string name="ne02">不存在此id</string>
+    <string name="ne03">资源找不到</string>
+    <string name="ne04">学校不存在</string>
+    <string name="ne05">代送不存在</string>
+    <string name="ne06">代送类型不存在</string>
+    <string name="ne07">消息不存在</string>
+    <string name="fe01">上传的文件尺寸不对</string>
+    <string name="fe02">不支持的文件格式</string>
+    <string name="fe03">不合法的文件名</string>
+    <string name="un99">未知错误</string>
+</resources>

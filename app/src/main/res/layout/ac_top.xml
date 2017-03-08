@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_top_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ac_top_height"
+    android:background="#00dec9"
+    android:paddingLeft="@dimen/padding_left">
+
+    <ImageView
+        android:id="@+id/id_top_back_iv_img"
+        android:layout_width="@dimen/ac_top_back_img_width"
+        android:layout_height="@dimen/ac_top_back_img_height"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent" />
+
+
+    <TextView
+        android:id="@+id/id_top_back_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/min_divider"
+        android:layout_toRightOf="@id/id_top_back_iv_img"
+        android:background="@android:color/transparent"
+        android:textSize="@dimen/hall_option_type_tv_size" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_top_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:text="@string/hall"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/ac_top_tv_size" />
+
+        <ImageView
+            android:id="@+id/id_top_iv_down"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/min_divider"
+            android:layout_gravity="bottom"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_top_right_iv_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_left"
+        android:background="@android:color/transparent" />
+</RelativeLayout>

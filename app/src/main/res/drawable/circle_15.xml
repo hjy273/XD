@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#01c6ab" />
+    <!-- 在xml文件中不可以间接使用键值来引用颜色，如果上面的颜色如何定义为string类型存储
+    在strings.xml文件中，再用@string/的形式来引用，这是错误的，因为颜色是用十六进制来定义的
+    ，如果用string类型，是错误的 -->
+    <corners android:radius="7.5dp" />
+</shape>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55555555">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_white_gray_20"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/id_pop_modifyname_tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/id_pop_modifyname_et_nickname"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_pop_modifyname_tv_nickname"
+            android:background="@null"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/id_pop_modifyname_btn_cancel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/cancel"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/id_pop_modifyname_btn_confirm"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/confirm"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

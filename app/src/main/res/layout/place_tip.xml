@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_place_tip_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dip"
+    android:layout_marginTop="20dip"
+    android:background="@color/background_color_gary"
+    android:textColor="@color/text_color_heavy_gray"
+    android:textSize="14sp">
+
+</TextView>

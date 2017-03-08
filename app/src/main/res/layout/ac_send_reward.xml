@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:timepicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/background_color_white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/good_type"
+                    android:textColor="@color/text_color_thin_red"
+                    android:textSize="@dimen/small_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_ac_send_reward_iv_express_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/circle_stroke_green_60"
+                        android:padding="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/good_type_express" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_divider"
+                        android:text="@string/express"
+
+                        android:textColor="@color/text_color_thin_gray"
+                        android:textSize="@dimen/min_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_ac_send_reward_iv_food_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/circle_stroke_green_60"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/good_type_food" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_divider"
+                        android:text="@string/food"
+                        android:textColor="@color/text_color_thin_gray"
+                        android:textSize="@dimen/min_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_ac_send_reward_iv_paper_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/circle_stroke_green_60"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/good_type_paper" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_divider"
+                        android:text="@string/paper"
+                        android:textColor="@color/text_color_thin_gray"
+                        android:textSize="@dimen/min_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_ac_send_reward_iv_other_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/circle_stroke_green_60"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/good_type_other" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_divider"
+                        android:text="@string/other"
+                        android:textColor="@color/text_color_thin_gray"
+                        android:textSize="@dimen/min_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_ac_send_reward_iv_take_photo_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/take_phone_send_reward" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_divider"
+                        android:text="@string/take_photo"
+                        android:textColor="@color/text_color_thin_gray"
+                        android:textSize="@dimen/min_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_thin_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:text="@string/weight_with_unit"
+                android:textColor="@color/text_color_thin_red"
+                android:textSize="@dimen/small_textsize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/id_ac_send_reward_rg_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/id_ac_send_reward_rb_light"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/sharecheckbox_selector"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:text="@string/less_than_two"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+
+
+                    <RadioButton
+                        android:id="@+id/id_ac_send_reward_rb_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/sharecheckbox_selector"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:text="@string/more_than_two_and_less_than_five"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+
+
+                    <RadioButton
+                        android:id="@+id/id_ac_send_reward_rb_heavy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/sharecheckbox_selector"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:text="@string/more_than_five"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_color_gary"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:background="@color/background_color_gary"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/id_ac_send_reward_et_start_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:maxWidth="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/circle_white_35"
+                        android:hint="@string/start_place"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textColorHint="@color/text_color_thin_gray"
+                        android:textSize="@dimen/small_textsize" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/line_white" />
+                    <TextView
+                        android:id="@+id/id_ac_send_reward_et_arrive_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:maxWidth="130dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/circle_white_35"
+                        android:hint="@string/end_place"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textColorHint="@color/text_color_thin_gray"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/smile_point."
+                        android:textColor="@color/text_color_thin_gray"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/id_ac_send_reward_et_xd_grade"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/circle_white_35"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/text_color_heavy_gray"
+                            android:textSize="@dimen/small_textsize" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/phone."
+                        android:textColor="@color/silver"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <EditText
+                        android:id="@+id/id_ac_send_reward_et_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:background="@drawable/circle_white_35"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/background_color_gary">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_left_double"
+                        android:text="@string/contact_stop_time"
+                        android:textColor="@color/text_color_thin_gray"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <TextView
+                        android:id="@+id/id_ac_reward_tv_limited_time"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/padding_left"
+                        android:layout_marginRight="@dimen/padding_left"
+                        android:layout_weight="1"
+                        android:background="@drawable/circle_white_35"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="@dimen/padding_left"
+                        android:text="@string/default_go_limited_time"
+                        android:textColor="@color/text_color_heavy_gray"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/id_ac_send_reward_et_text_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_white_35"
+                    android:gravity="left|top"
+                    android:hint="@string/show_go_out_text_des"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:textColor="@color/text_color_heavy_gray"
+                    android:textColorHint="@color/text_color_thin_gray"
+                    android:textSize="@dimen/small_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color_gary"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="@dimen/small_divider">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/share_at_same_time"
+                    android:textColor="@color/text_color_thin_gray"
+                    android:textSize="@dimen/small_textsize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:paddingRight="@dimen/padding_left_double">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/id_ac_send_reward_cb_qzone_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/sharecheckbox_selector"
+                            android:paddingLeft="@dimen/padding_left"
+                            android:text="@string/qzone"
+                            android:textColor="@color/text_color_heavy_gray"
+                            android:textSize="@dimen/small_textsize" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/id_ac_send_reward_cb_wechat_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:button="@drawable/sharecheckbox_selector"
+                            android:paddingLeft="@dimen/padding_left"
+                            android:text="@string/wechat"
+                            android:textColor="@color/text_color_heavy_gray"
+                            android:textSize="@dimen/small_textsize" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/id_ac_send_reward_cb_weibo_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:button="@drawable/sharecheckbox_selector"
+                            android:paddingLeft="@dimen/padding_left"
+                            android:text="@string/weibo"
+                            android:textColor="@color/text_color_heavy_gray"
+                            android:textSize="@dimen/small_textsize" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/id_ac_send_reward_btn_release"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/big_btn_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_color_white"
+                    android:background="@drawable/login_btn_selector"
+                    android:text="@string/xd_public" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

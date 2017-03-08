@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/id_ac_go_out_rl_des_user"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/background_color_thin_green">
+
+            <RelativeLayout
+                android:id="@+id/id_ac_go_out_info_top"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/padding_left_double"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:id="@+id/id_ac_go_out_info_img_and_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_ac_go_out_des_iv_head_picture"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/head"
+                        android:padding="2dp" />
+
+                    <TextView
+                        android:id="@+id/id_ac_go_out_des_tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/small_divider"
+                        android:text="@string/default_user_name"
+                        android:textColor="@color/text_color_thin_black"
+                        android:textSize="@dimen/normal_textsize" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignBottom="@id/id_ac_go_out_info_img_and_name"
+                    android:layout_toRightOf="@id/id_ac_go_out_info_img_and_name"
+                    android:layout_height="15dp"
+                    android:background="@drawable/circle_15"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_divider"
+                    android:paddingRight="@dimen/small_divider"
+                    android:text="@string/have_real_name_identificate"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_ac_go_out_rl_grade_and_smile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_left"
+                android:layout_below="@id/id_ac_go_out_info_top">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding_left_double"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_ac_go_out_des_tv_grade_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/credit"
+                        android:textColor="@color/text_color_thin_gray" />
+
+                    <TextView
+                        android:id="@+id/id_ac_go_out_des_tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_divider"
+                        android:text="@string/default_credit"
+                        android:textColor="@color/text_color_thin_black"
+                        android:textSize="@dimen/normal_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/padding_left_double"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_ac_go_out_des_tv_ordered_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smile_point."
+                        android:textColor="@color/text_color_thin_gray" />
+
+                    <TextView
+                        android:id="@+id/id_ac_go_out_des_tv_smile_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_divider"
+                        android:text="@string/default_credit"
+                        android:textColor="@color/text_color_thin_black"
+                        android:textSize="@dimen/normal_textsize" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_go_out_des_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_ac_go_out_rl_des_user"
+            android:background="@color/background_color_white"
+            android:layout_marginTop="@dimen/padding_left_double"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/normal_divider">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/padding_left_double"
+                android:layout_marginTop="@dimen/padding_left"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/padding_left_double">
+
+                <ImageView
+                    android:layout_width="@dimen/circle_place_width"
+                    android:layout_height="@dimen/circle_place_width"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/small_circle_place" />
+
+                <TextView
+                    android:id="@+id/id_ac_go_out_des_tv_startplace"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/small_divider"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/default_user_name"
+                    android:textColor="@color/text_color_heavy_gray"
+                    android:textSize="@dimen/normal_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/padding_left_double"
+                android:layout_marginTop="@dimen/padding_left"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/padding_left_double">
+
+                <ImageView
+                    android:layout_width="@dimen/circle_place_width"
+                    android:layout_height="@dimen/circle_place_width"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/small_circle_place" />
+
+                <TextView
+                    android:id="@+id/id_ac_go_out_des_tv_endplace"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/small_divider"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/default_user_name"
+                    android:textColor="@color/text_color_heavy_gray"
+                    android:textSize="@dimen/normal_textsize" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/padding_left_double"
+                android:layout_marginTop="@dimen/padding_left"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/padding_left_double">
+
+                <TextView
+                    android:id="@+id/tv_go_out_start_stop_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/go_limited_time"
+                    android:textColor="@color/text_color_thin_gray"
+                    android:textSize="@dimen/small_textsize" />
+
+
+                <TextView
+                    android:id="@+id/id_ac_go_out_des_tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_divider"
+                    android:text="@string/default_go_limited_time"
+                    android:textColor="@color/text_color_heavy_gray"
+                    android:textSize="@dimen/normal_textsize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/padding_left_double"
+                android:layout_marginTop="@dimen/padding_left"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/padding_left_double">
+
+
+                <TextView
+                    android:id="@+id/tv_go_out_des_text_des_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/explain_word"
+                    android:textColor="@color/text_color_thin_gray"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/id_ac_go_out_des_tv_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_divider"
+                    android:text="@string/default_user_name"
+                    android:textColor="@color/text_color_heavy_gray"
+                    android:textSize="@dimen/normal_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/id_ac_go_out_des_btn_contact"
+                android:layout_width="@dimen/edittext_width"
+                android:layout_height="@dimen/big_btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_left_double"
+                android:layout_marginTop="@dimen/padding_left"
+                android:background="@drawable/login_btn_selector"
+                android:text="@string/get2"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/normal_textsize" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

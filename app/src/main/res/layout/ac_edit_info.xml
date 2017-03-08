@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background_color_thin_green"
+        android:layout_weight="1.3">
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/id_editinfo_iv_img"
+                android:layout_width="80dp"
+                android:background="@color/gray"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:id="@+id/id_editinfo_iv_setimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/photo"
+                android:layout_gravity="bottom|right" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:background="@color/background_color_gary"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/background_color_white"
+            android:layout_height="@dimen/ac_top_height">
+            <TextView
+                android:id="@+id/id_editinfo_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:text="@string/nickname"
+                android:textColor="@color/text_color_thin_black"
+                android:textSize="@dimen/normal_textsize" />
+
+            <EditText
+                android:id="@+id/id_ac_editinfo_et_setname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/id_editinfo_name_label"
+                android:layout_marginLeft="@dimen/ac_top_height"
+                android:background="@null"
+                android:hint="@string/default_user_name"
+                android:textColor="@color/text_color_heavy_gray"
+                android:textSize="@dimen/normal_textsize" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_top_height"
+            android:background="@color/background_color_white"
+            android:layout_marginTop="@dimen/padding_left">
+
+
+            <TextView
+                android:id="@+id/id_editinfo_tv_sex_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:textColor="@color/text_color_thin_black"
+                android:text="@string/sex"
+                android:textSize="@dimen/normal_textsize" />
+
+            <TextView
+                android:id="@+id/id_ac_editinfo_tv_setsex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ac_top_height"
+                android:text="@string/default_sex"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/id_editinfo_tv_sex_label"
+                android:textColor="@color/text_color_heavy_gray"
+                android:textSize="@dimen/normal_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_top_height"
+            android:background="@color/background_color_white"
+            android:layout_marginTop="@dimen/padding_left">
+
+
+            <TextView
+                android:id="@+id/id_editinfo_tv_phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:text="@string/cellphone"
+                android:textColor="@color/text_color_thin_black"
+                android:textSize="@dimen/normal_textsize" />
+
+            <EditText
+                android:id="@+id/id_ac_editinfo_et_setphone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:background="@null"
+                android:layout_toRightOf="@id/id_editinfo_tv_phone_label"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_heavy_gray"
+                android:hint="@string/default_user_phone"
+                android:textSize="@dimen/normal_textsize" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:background="@color/background_color_gary" />
+</LinearLayout>

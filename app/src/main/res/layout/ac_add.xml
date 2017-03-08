@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/id_ac_add_iv_close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/padding_left"
+        android:src="@drawable/add_close"
+        android:scaleType="center"
+        android:layout_marginTop="10dp" />
+
+
+    <LinearLayout
+        android:id="@+id/id_ac_add_ll_send_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/padding_left_double"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/my_item_height"
+            android:layout_height="@dimen/my_item_height"
+            android:scaleType="center"
+            android:src="@drawable/publish_reward"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:text="@string/send_reward"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/normal_textsize" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/id_ac_add_ll_send_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/id_ac_add_ll_send_reward"
+        android:layout_marginRight="@dimen/padding_left_double"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/my_item_height"
+            android:layout_height="@dimen/my_item_height"
+            android:scaleType="center"
+            android:src="@drawable/publish_go_out"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:text="@string/send_travel"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/normal_textsize" />
+    </LinearLayout>
+
+</RelativeLayout>

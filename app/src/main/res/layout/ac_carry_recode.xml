@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_gary"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:src="@drawable/publish" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:gravity="center_vertical"
+            android:text="@string/my_publish_record"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.tyb.xd.view.MyExpandListView
+        android:id="@+id/id_ac_carryRecord_epl_my_publish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:src="@drawable/receive" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:gravity="center_vertical"
+            android:text="@string/my_receive_record"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <com.tyb.xd.view.MyExpandListView
+        android:id="@+id/id_ac_carryRecord_epl_my_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>
